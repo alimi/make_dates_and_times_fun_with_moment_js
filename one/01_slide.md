@@ -6,7 +6,7 @@
 
 !SLIDE[bg=i_write_code.gif]
 
-!SLIDE[bg=sometimes_i_write_javascript.png] background-fit
+!SLIDE[bg=thinking.png] background-fit
 
 !SLIDE[bg=table_flip.gif]
 
@@ -44,3 +44,170 @@
     >> date.toString()
     
     > "Wed Jun 03 2015 09:00:00 GMT-0400 (EDT)"
+
+!SLIDE code
+    @@@ JavaScript
+    >> // Wednesday, June 3, 2015 - 9:00 AM
+
+!SLIDE code
+    @@@ JavaScript
+    >> // Wednesday
+
+!SLIDE[bg=get_day.png] background-fit
+
+!SLIDE code
+    @@@ JavaScript
+    >> // Wednesday, June 3, 2015 - 9:00 AM
+
+    >> date.getDay()
+
+!SLIDE code
+    @@@ JavaScript
+    >> // Wednesday, June 3, 2015 - 9:00 AM
+
+    >> date.getDay()
+
+    > 3
+
+!SLIDE code
+    @@@ JavaScript
+    >> weekdays = [
+         "Sunday",
+         "Monday",
+         "Tuesday",
+         "Wednesday",
+         "Thurday",
+         "Friday",
+         "Saturday"
+       ]
+
+!SLIDE code
+    @@@ JavaScript
+    >> weekdays[date.getDay()]
+
+!SLIDE code
+    @@@ JavaScript
+    >> weekdays[date.getDay()]
+
+    > "Wednesday"
+
+!SLIDE code
+    @@@ JavaScript
+    >> weekdays[date.getDay()]
+
+    > "Wednesday"
+
+    >> // Wednesday, June 3, 2015 - 9:00 AM
+
+!SLIDE code
+    @@@ JavaScript
+    >> weekdays[date.getDay()] +
+
+!SLIDE code
+    @@@ JavaScript
+    >> weekdays[date.getDay()] +
+         ", " +
+
+!SLIDE code
+    @@@ JavaScript
+    >> weekdays[date.getDay()] +
+         ", " +
+         months[date.getMonth()] +
+
+!SLIDE code
+    @@@ JavaScript
+    >> weekdays[date.getDay()] +
+         ", " +
+         months[date.getMonth()] +
+         date.getDate() +
+
+!SLIDE code
+    @@@ JavaScript
+    >> weekdays[date.getDay()] +
+         ", " +
+         months[date.getMonth()] +
+         date.getDate() +
+         "," +
+
+!SLIDE code
+    @@@ JavaScript
+    >> weekdays[date.getDay()] +
+         ", " +
+         months[date.getMonth()] +
+         date.getDate() +
+         "," +
+         date.getFullYear() +
+
+!SLIDE code
+    @@@ JavaScript
+    >> weekdays[date.getDay()] +
+         ", " +
+         months[date.getMonth()] +
+         date.getDate() +
+         "," +
+         date.getFullYear() +
+         " - " +
+
+!SLIDE code
+    @@@ JavaScript
+    >> weekdays[date.getDay()] +
+         ", " +
+         months[date.getMonth()] +
+         date.getDate() +
+         "," +
+         date.getFullYear() +
+         " - " +
+         date.toLocaleTimeString()
+
+!SLIDE code
+    @@@ JavaScript
+    > "Wednesday, June3,2015 - 9:00:00 AM"
+
+!SLIDE code
+    @@@ JavaScript
+    > "Wednesday, June3,2015 - 9:00:00 AM"
+
+  ![Why?!](zoidberg.png)
+
+!SLIDE code
+    @@@ JavaScript
+    >> weekdays[date.getDay()] +
+         ", " +
+         months[date.getMonth()] +
+         date.getDate() +
+         "," +
+         date.getFullYear() +
+         " - " +
+         date.toLocaleTimeString()
+
+!SLIDE
+<br />
+
+!SLIDE center
+  ![moment.js](moment_js.png)
+
+!SLIDE code
+    @@@ JavaScript
+    >> moment("2015-06-03T13:00:00+00:00")
+
+    > Object { _isAMomentObject: true, ... }
+
+!SLIDE code
+    @@@ JavaScript
+    >> aBetterDate =
+         moment("2015-06-03T13:00:00+00:00")
+
+    >> aBetterDate.
+         format("dddd, MMMM D, YYYY - h:mm A")
+
+!SLIDE code
+    @@@ JavaScript
+    >> aBetterDate =
+         moment("2015-06-03T13:00:00+00:00")
+
+    >> aBetterDate.
+         format("dddd, MMMM D, YYYY - h:mm A")
+
+    > "Wednesday, June 3, 2015 - 9:00 AM"
+
+!SLIDE[bg=yay.gif]
