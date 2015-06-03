@@ -1,3 +1,6 @@
+!SLIDE
+<br />
+
 !SLIDE[bg=dr_nick.gif] background-fit
 
 !SLIDE[bg=ali_1.jpeg]
@@ -211,3 +214,42 @@
     > "Wednesday, June 3, 2015 - 9:00 AM"
 
 !SLIDE[bg=yay.gif]
+
+!SLIDE code
+    @@@ JavaScript
+    >> weekdays[date.getDay()] +
+         ", " +
+         months[date.getMonth()] +
+         date.getDate() +
+         "," +
+         date.getFullYear() +
+         " - " +
+         date.toLocaleTimeString()
+
+!SLIDE code
+    @@@ JavaScript
+
+    >> aBetterDate.
+         format("dddd, MMMM D, YYYY - h:mm A")
+
+!SLIDE[bg=skepitcal_cat.jpg]
+
+!SLIDE[bg=time_1.png]
+
+!SLIDE[bg=time_2.png]
+
+!SLIDE[bg=time_3.png]
+
+!SLIDE
+<br />
+
+!SLIDE center
+  ![moment.js](moment_js.png)
+
+  [http://momentjs.com/](http://momentjs.com/)
+
+!SLIDE
+
+# Make Date and Times Fun! with moment.js
+
+## Ali Ibrahim - [@alimeye](https://twitter.com/alimeye)
